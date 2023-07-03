@@ -1,1 +1,2 @@
-https://hub.docker.com/repository/docker/latifismail/item-app/general
+https://hub.docker.com/repository/docker/latifismail/karsajobs-ui/general
+https://hub.docker.com/repository/docker/latifismail/karsajobs/general
