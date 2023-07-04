@@ -26,6 +26,7 @@ services:
       - rabbitmq_network
     depends_on:
       - rabbitmq
+    command: sh -c '/bin/wait-for-it.sh rabbitmq:5672 --timeout=30 -- node index.js'
   shipping:
     image: latifismail/shipping-service:latest
     container_name: 'ecommerce_shipping'
@@ -41,6 +42,7 @@ services:
       - rabbitmq_network
     depends_on:
       - rabbitmq
+    command: sh -c '/bin/wait-for-it.sh rabbitmq:5672 --timeout=30 -- node index.js'
 volumes:
   rabbitmq_data:
   rabbitmq_log:
